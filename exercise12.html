@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercise 12</title>
+</head>
+
+<body>
+
+  <script>
+
+    function removeRed(objectArray) {
+      let x =  objectArray.filter(function (food, index) {
+        return food.color != 'red';
+      }
+      );
+      return x;
+    }
+    let arryList = [{ name: 'Apple', color: 'red' },
+    { name: 'Egg', color: 'white' }
+    ];
+
+    removeRed(arryList);
+
+  </script>
+</body>
+
+</html>

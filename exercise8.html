@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <!--
+      task 1
+    -->
+  <button onclick="change()" id="todo-button">Click Me</button>
+  <!--
+      task 2
+    -->
+  <div id="counter">0</div>
+  <button onclick="myCounter()">Up</button>
+
+    <!--
+      task 3
+    -->
+    <button onclick="myCounter2()">down</button>
+
+    <!--
+      task 4
+    -->
+
+    <br>
+    <input id = "content" type="text">
+    <button onclick="showContents()" id = "show-button">show on page</button>
+    <div id = "show-div"></div>
+  <script>
+    // Task 1
+    function change() {
+      let button = document.getElementById('todo-button');
+      button.innerText = 'Done';
+    }
+
+    // Task 2
+    let counter = 0;
+    function myCounter(){
+       counter = counter + 1;
+      let div = document.getElementById('counter');
+      div.innerText = counter;
+    }
+
+     // Task 3
+    function myCounter2(){
+       counter = counter - 1;
+      const div = document.getElementById('counter');
+      div.innerText = counter;
+    }
+  // Task 4
+    function showContents(){
+      const element = document.getElementById('show-div');
+      const content_input = document.getElementById('content');
+      const input_value = content_input.value;
+      element.innerText = input_value ; 
+    }
+  </script>
+</body>
+
+</html>

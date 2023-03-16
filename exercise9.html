@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <!--Task 1-->
+  <div id="cart"></div>
+  <button onclick="AddEggs()" id="eggs">Eggs</button>
+  <button onclick="AddTomatos()" id="tomatos">Tomatos</button>
+  <button onclick="AddApple()" id="apple">apple</button>
+  <button onclick="AddClear()" id="clear">clear</button>
+
+  <!--Task 2-->
+  <br>
+  <br>
+  <input id="measurement" />
+  <button onclick="toCm()" >Convert to cm</button>
+  <button onclick="toInch()" >Convert to inch </button>
+  <div id="show-conversion"></div>
+
+  <script>
+    // Task 1
+    document.title = 'Exercise9';
+    let cartList = [];
+    function render(arg) {
+      const cart_div = document.getElementById('cart');
+      const element = document.createElement('div');
+      element.innerText = arg;
+      cart_div.appendChild(element);
+    }
+
+    function AddEggs() {
+      render('Eggs');
+    }
+
+    function AddApple() {
+      render('Apple');
+    }
+
+    function AddTomatos() {
+      render('Tomatos');
+    }
+
+    function AddClear() {
+      const cart_div = document.getElementById('cart');
+      cart_div.innerHTML = ' ';
+    }
+
+    // Task 2
+
+    const measurement = document.getElementById('measurement');
+    
+
+    function toCm() {
+      const x = measurement.value;
+      const show_conversion = document.getElementById('show-conversion');
+      const result = +x * 2.54 ;
+  
+      const newDiv = document.createElement('div');
+      newDiv.innerText = result + ' cm';
+      show_conversion.appendChild(newDiv);
+    }
+
+    function toInch() {
+      const x = measurement.value;
+      const show_conversion = document.getElementById('show-conversion');
+      const result = +x * 0.394;
+     
+      const newDiv = document.createElement('div');
+      newDiv.innerText = result + ' inch';
+      show_conversion.appendChild(newDiv);
+    }
+
+  </script>
+</body>
+
+</html>

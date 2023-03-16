@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exercise10</title>
+</head>
+
+<body style="margin-left: 20px;">
+  <div id="myId"></div>
+  <script>
+    let cartArray = [{ name: 'Apple', price: 4, quantity: 2 },
+    { name: 'Apple', price: 3, quantity: 3 }
+    ];
+
+    let totalSum = 0;
+    let sum = 0;
+    let Value = document.getElementById('myId');
+
+    for (let i = 0; i < cartArray.length; i++) {
+      sum = cartArray[i].price * cartArray[i].quantity;
+      totalSum += sum;
+      Value.innerText = totalSum;
+    }
+    /*
+        function cartTotal(cartArray) {
+          const totalSum = 0;
+          let sum = 0;
+          cartArray.forEach(function (cartArray) {
+            sum = cartArray.price * cartArray.quantity;
+            totalSum += sum;
+          });
+    
+          const value = document.createElement('div');
+          value.innerText = 'amir';
+          document.appendChild(x);
+    
+          const Value = document.getElementById('myId');
+          Value.innerText = 'amir';
+        }
+    
+        
+        cartTotal();
+        */
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  let todo1 = 'Get groceries';
+  let todo2 = 'Wash car';
+  let todo3 = 'Make dinner';
+  let button = 'Click Me';
+
+  document.title = 'todo list';
+
+  function addTodo(todoTitle, addTag){
+    let element = document.createElement(addTag);
+  element.innerText = todoTitle;
+  document.body.appendChild(element);
+  }
+
+  addTodo(button,'button');
+  addTodo(todo1,'div');
+  addTodo(todo2,'div');
+  addTodo(todo3,'div');
+
+  function toUpper(str){
+   return console.log(str.toUpperCase());
+  }
+
+toUpper('amir');
+  
+</script>
+</html>

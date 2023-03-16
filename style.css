@@ -1,0 +1,53 @@
+body {
+  background-color: #00cba6;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.4rem;
+  font-weight: 550;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+input {
+  font-size: 1.1rem;
+  font-weight: 550;
+  padding: 8px;
+}
+button {
+  margin-left: 0;
+  margin-right: 0;
+  width: fit-content;
+  font-size: 1.1rem;
+  font-weight: 550;
+  padding: 8px;
+}
+
+#todo-title {
+  margin-bottom: 10px;
+}
+.container {
+  margin: 0 auto;
+  width: 80%;
+  border: 2px rgba(0, 0, 0, 0.135) solid;
+  padding: 20px;
+}
+
+.align-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.align-item button {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+#date-picker {
+  margin-left: 10px;
+}

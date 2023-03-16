@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>exerise 11</title>
+</head>
+<body>
+  <div id="showCart"></div>
+  <script>
+
+    let myCart = {
+      Apple: 3, Orange: 2, Egg: 2
+    }
+
+    let total = 0;
+    let myList = [];
+    function createCart(myObject) {
+      myList = Object.keys(myObject);
+      myList.forEach(function (key) {
+        const showCart = document.getElementById("showCart");
+        const content = document.createElement('div');
+        content.innerText = key + ' ' + myCart[key];
+        
+        const addButton = document.createElement('button');
+        addButton.innerText = "Add";
+        content.appendChild(addButton);
+        showCart.appendChild(content);
+        addButton.style = "margin-left: 20px";
+        addButton.onclick = function (){
+          total += myCart[key];
+        }
+      });
+    }
+
+    createCart(myCart);
+  </script>
+</body>
+
+</html>

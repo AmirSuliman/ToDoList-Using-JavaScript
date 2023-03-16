@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  let todo1 = 'Get groceries';
+  let todo2 = 'Wash car';
+  let todo3 = 'Make dinner';
+  let button = 'Click Me';
+
+  document.title = 'todo list';
+
+  let buttonTag = document.createElement('button');
+  buttonTag.innerText = button;
+  document.body.appendChild(buttonTag);
+
+  let element = document.createElement('div');
+  element.innerText = todo1;
+  document.body.appendChild(element);
+
+  element = document.createElement('div');
+  element.innerText = todo2;
+  document.body.appendChild(element);
+  
+  element = document.createElement('div');
+  element.innerText = todo3;
+  document.body.appendChild(element);
+
+</script>
+</html>
